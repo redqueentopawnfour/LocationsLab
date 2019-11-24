@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_starting">
+
+    <fragment
+        android:id="@+id/nav_starting"
+        android:name="edu.uw.tcss450.polkn.locationslab.ui.StartingFragment"
+        android:label="fragment_starting"
+        tools:layout="@layout/fragment_starting" />
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="edu.uw.tcss450.polkn.locationslab.ui.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" /><action android:id="@+id/action_global_nav_map" app:destination="@id/nav_map"/>
+</navigation>
